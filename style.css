@@ -1,0 +1,144 @@
+/*    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Poppins', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #674bb1;
+    background-image: url(images/bg-desktop.svg);
+}
+.header{
+    width: 100%;
+    padding: 20px 0 0 6%;
+}
+.header img{
+    width: 12%;
+}
+.header img:hover{
+    cursor: pointer;
+}
+.center{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 80%;
+}
+.right{
+    
+    width: 40%;
+}
+.right h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+    line-height: 45px;
+}
+.right p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+.button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.button button{
+    background-color: white;
+    width: 35%;
+    height: 45px;
+    color: #674bb1;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    transition: 500ms;
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: #674bb1;
+    color: white;
+    border: 1px solid white;
+}
+.button button:active{
+    transform: translateY(-10px);
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social i{
+    color: white;
+    font-size: 20px;
+    margin-right: 2%;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+.social i:hover{
+    background-color: white;
+    color: #674bb1;
+    cursor: pointer;
+}
+@media (max-width: 1032px){
+    .center{
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .button{
+        justify-content: center;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 764px){
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .header img{
+        width: 25%;
+    }
+}
+@media (max-width: 522px){
+    .left{
+        width: 95%;
+    }
+    .right{      
+        width: 95%;
+    }
+    .right h1{
+        font-size: 25px;
+    }
+}
